@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My E-commerce Website</h1>
+        <p id="cache-note" class="hidden">Static resources cached for faster loading!</p>
+    </header>
+
+    
+    <section id="login-section">
+        <input type="text" id="username-input" placeholder="Enter your name">
+        <button id="login-btn">Log In</button>
+    </section>
+    <h2 id="greeting"></h2>
+
+    
+    <label for="font-select">Choose font:</label>
+    <select id="font-select">
+        <option value="Arial">Arial</option>
+        <option value="'Times New Roman'">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <main>
+        
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <button id="view-cart-button">View Cart</button>
+            <div id="products-container"></div>
+        </section>
+
+        
+        <section id="cart-area" class="hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+            <p id="total-price">Total Price: 0</p>
+            <button id="checkout-button">Checkout</button>
+            <button id="clear-cart">Clear All</button>
+            <button id="close-cart">Close Cart</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
